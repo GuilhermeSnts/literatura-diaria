@@ -1,0 +1,16 @@
+{
+  "name": "literatura-diaria",
+  "version": "1.0.0",
+  "description": "just another book planner app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "Guilherme S. Santos",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
