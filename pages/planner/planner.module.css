@@ -1,0 +1,14 @@
+/* reset */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+}
+/* style */
+.header {
+}
+
+.page {
+  width: 100vw;
+  heigth: 100vh;
+}
