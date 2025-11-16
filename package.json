@@ -4,7 +4,10 @@
   "description": "just another book planner app",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:prettier": "prettier --write .",
     "lint:prettier:check": "prettier --check .",
     "lint:eslint:check": "eslint "
@@ -14,12 +17,14 @@
   "dependencies": {
     "lucide-react": "^0.553.0",
     "next": "^16.0.1",
+    "pg": "^8.16.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
+    "@types/pg": "^8.15.6",
     "@types/react": "^19.2.5",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.3",
