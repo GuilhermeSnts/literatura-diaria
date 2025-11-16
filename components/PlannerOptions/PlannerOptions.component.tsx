@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import style from "./PlannerOptions.module.css";
 import { EllipsisVertical } from "lucide-react";
 
 export function PlannerOptions(): React.ReactElement {
@@ -11,11 +10,11 @@ export function PlannerOptions(): React.ReactElement {
 
   return (
     <>
-      <button onClick={toggleOptions} className={style.actionButton}>
+      <button onClick={toggleOptions}>
         <EllipsisVertical size={18} />
       </button>
       {showOptions && (
-        <ul className={style.popmenu}>
+        <ul>
           <li>Exportar em pdf</li>
           <li>Exportar em csv</li>
         </ul>

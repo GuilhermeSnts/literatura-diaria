@@ -1,13 +1,12 @@
 import React from "react";
 import type { NextPage } from "next";
-import style from "./planner.module.css";
 import PlannerOptions from "../../components/PlannerOptions/PlannerOptions.component";
 
 const Planner: NextPage = () => {
   return (
-    <div className={style.page}>
+    <div>
       <PlannerOptions />
-      <h1 className={style.header}>Título</h1>
+      <h1>Título</h1>
       <h3>Autor:</h3>
       <h5>Início: DD/MM/YYYY Fim: DD/MM/YYYY</h5>
       <div>estrelas</div>
