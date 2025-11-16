@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./PlannerOptions.module.css";
 import { EllipsisVertical } from "lucide-react";
 
-function PlannerOptions(params) {
+function PlannerOptions() {
   const [showOptions, setShowOptions] = useState(false);
 
   function toggleOptions() {
