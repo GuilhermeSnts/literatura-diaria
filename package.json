@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint:prettier": "prettier --write .",
     "lint:prettier:check": "prettier --check .",
-    "lint:eslint:check": "next lint"
+    "lint:eslint:check": "eslint "
   },
   "author": "Guilherme S. Santos",
   "license": "MIT",
@@ -21,6 +21,8 @@
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.3",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.17",
