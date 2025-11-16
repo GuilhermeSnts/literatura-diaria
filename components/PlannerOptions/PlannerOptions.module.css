@@ -1,0 +1,14 @@
+.actionButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popmenu {
+  list-style: none;
+  margin: 0.25rem 0 0 0;
+  padding: 0.25rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
