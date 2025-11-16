@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "lint": "prettier --write .",
-    "lint:check": "prettier --check ."
+    "lint:prettier": "prettier --write .",
+    "lint:prettier:check": "prettier --check .",
+    "lint:eslint:check": "next lint"
   },
   "author": "Guilherme S. Santos",
   "license": "MIT",

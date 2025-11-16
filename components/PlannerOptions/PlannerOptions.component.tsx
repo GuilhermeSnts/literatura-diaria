@@ -5,7 +5,7 @@ export function PlannerOptions(): React.ReactElement {
   const [showOptions, setShowOptions] = useState<boolean>(false);
 
   function toggleOptions(): void {
-    setShowOptions((prev) => !prev);
+    setShowOptions(prev => !prev);
   }
 
   return (
