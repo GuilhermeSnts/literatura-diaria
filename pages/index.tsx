@@ -1,6 +1,7 @@
 import React from "react";
+import type { NextPage } from "next";
 
-export default function home() {
+const Home: NextPage = () => {
   return (
     <main
       style={{
@@ -14,4 +15,6 @@ export default function home() {
       <p>Em breve uma descrição mais detalhada do projeto estará disponível aqui. </p>
     </main>
   );
-}
+};
+
+export default Home;

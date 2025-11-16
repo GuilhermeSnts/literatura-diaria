@@ -1,7 +1,9 @@
+import React from "react";
+import type { NextPage } from "next";
 import style from "./planner.module.css";
-import { PlannerOptions } from "../../components/PlannerOptions/PlannerOptions.component";
+import PlannerOptions from "../../components/PlannerOptions/PlannerOptions.component";
 
-function Planner() {
+const Planner: NextPage = () => {
   return (
     <div className={style.page}>
       <PlannerOptions />
@@ -22,6 +24,6 @@ function Planner() {
       </div>
     </div>
   );
-}
+};
 
 export default Planner;

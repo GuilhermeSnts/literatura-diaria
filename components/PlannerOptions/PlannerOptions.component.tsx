@@ -1,17 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import style from "./PlannerOptions.module.css";
 import { EllipsisVertical } from "lucide-react";
 
-function PlannerOptions() {
-  const [showOptions, setShowOptions] = useState(false);
+export function PlannerOptions(): React.ReactElement {
+  const [showOptions, setShowOptions] = useState<boolean>(false);
 
-  function toggleOptions() {
-    setShowOptions(!showOptions);
+  function toggleOptions(): void {
+    setShowOptions((prev) => !prev);
   }
+
   return (
     <>
       <button onClick={toggleOptions} className={style.actionButton}>
-        <EllipsisVertical size="18px" />
+        <EllipsisVertical size={18} />
       </button>
       {showOptions && (
         <ul className={style.popmenu}>
@@ -23,4 +24,4 @@ function PlannerOptions() {
   );
 }
 
-export { PlannerOptions };
+export default PlannerOptions;
