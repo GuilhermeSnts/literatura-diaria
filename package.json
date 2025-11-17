@@ -8,6 +8,8 @@
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:stop": "docker compose -f infra/compose.yaml stop",
     "services:down": "docker compose -f infra/compose.yaml down",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint:prettier": "prettier --write .",
     "lint:prettier:check": "prettier --check .",
     "lint:eslint:check": "eslint "
@@ -23,11 +25,13 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
     "@types/pg": "^8.15.6",
     "@types/react": "^19.2.5",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.3",
+    "jest": "^25.0.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.17",
